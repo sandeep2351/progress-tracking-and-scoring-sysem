@@ -1,0 +1,125 @@
+/* Container for the form */
+form {
+    background-color: #f4f7fb;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Title of the form */
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Label styles */
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* Input fields styling */
+input, textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #fff;
+}
+
+/* Focus effect on inputs */
+input:focus, textarea:focus {
+    border-color: #5cb85c;
+    box-shadow: 0 0 5px rgba(92, 184, 92, 0.6);
+    outline: none;
+}
+
+/* Placeholder text style */
+textarea::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Submit button style */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #4cae4c;
+    transform: translateY(-3px);
+}
+
+/* Disabled button styling */
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Animation for the form */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+form {
+    animation: slideIn 0.6s ease-out;
+}
+
+/* Error message styling */
+p {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Input focus animation */
+input:focus, textarea:focus {
+    animation: focusEffect 0.3s ease-in-out;
+}
+
+/* Focus animation */
+@keyframes focusEffect {
+    0% {
+        border-color: #ccc;
+    }
+    50% {
+        border-color: #5cb85c;
+    }
+    100% {
+        border-color: #5cb85c;
+    }
+}

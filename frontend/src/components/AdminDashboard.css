@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Updated gradient colors */
+    color: #333;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    animation: fadeIn 1s ease-in-out;
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    animation: slideDown 1s ease-in-out;
+}
+
+/* Assign Project Section */
+.assign-project {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(120deg, #fff9f7, #ffffff);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 100%; /* Full width of the container */
+    max-width: 500px; /* Limit the maximum width */
+}
+
+/* Hover effects for Assign Project */
+.assign-project:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for input fields */
+.assign-project input,
+.assign-project select {
+    width: 100%; /* Make input fields take full width */
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #f9f9f9;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.assign-project input:focus,
+.assign-project select:focus {
+    border-color: #ff758c;
+    box-shadow: 0 0 5px rgba(255, 117, 140, 0.5);
+}
+
+/* Button style */
+.assign-project button {
+    width: 100%; /* Make button take full width */
+    padding: 12px;
+    font-size: 1.2rem;
+    color: #fff;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.assign-project button:hover {
+    background: #ffce7b;
+    transform: translateY(-3px);
+}
+
+/* Candidate Projects */
+.projects {
+    margin-top: 40px;
+}
+
+.project-card {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    border-left: 4px solid #ff758c;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+    color: #ff758c;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.project-card p {
+    margin: 8px 0;
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Logout Button */
+.logout-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 12px 20px;
+    background-color: #ff4d4d;
+    width:10%;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.logout-btn:hover {
+    background-color: #ff0000;
+    transform: translateY(-3px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

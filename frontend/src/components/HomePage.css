@@ -1,0 +1,161 @@
+/* HomePage.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #2c3e50, #4ca1af); /* Modern gradient */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff; /* Text color */
+    overflow: hidden;
+  }
+  
+  /* Container that holds the whole page content */
+  .home-container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 15px;
+    padding: 60px 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 800px;
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+  }
+  
+  /* Intro Text with Fade-in */
+  .intro-text h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #ecf0f1; /* Light color for heading */
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .intro-text p {
+    font-size: 18px;
+    color: #bdc3c7; /* Light grey color for description */
+    margin-bottom: 30px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Flexbox layout for the login boxes */
+  .login-box-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  /* Style for login box container */
+  .login-box {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .login-box h2 {
+    font-size: 26px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .login-box p {
+    font-size: 16px;
+    color:#fff;
+  }
+  
+  /* Hover effect for login boxes */
+  .login-box:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Admin Login box styling */
+  .login-box.admin {
+    background: #1abc9c;
+    color: #fff;
+    transition: background 0.3s ease;
+  }
+  
+  /* Employee Login box styling */
+  .login-box.employee {
+    background: #3498db;
+    color: #fff;
+    transition: background 0.3s ease;
+  }
+  
+  /* Hover effects for admin and employee login */
+  .login-box.admin:hover {
+    background: #16a085;
+  }
+  
+  .login-box.employee:hover {
+    background: #2980b9;
+  }
+  
+  /* Footer styling */
+  footer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #bdc3c7;
+    text-align: center;
+    width: 100%;
+  }
+  
+  footer p {
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Adjust login boxes for mobile screens */
+    .login-box-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .login-box {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  
+    .home-container {
+      padding: 40px 20px;
+    }
+  
+    .intro-text h1 {
+      font-size: 36px;
+    }
+  }
+  
